@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ETaskRepNew.props" />
+</Project>

@@ -1,0 +1,49 @@
+﻿@model ETaskRep.Models.User
+
+<link href="~/css/style.css" rel="stylesheet" />
+<form asp-controller="User" asp-action="Register" method="post">
+  <div class="login-full">
+    <div class="register-border">
+            <div class="register-head">
+            <h2 >Registration Form</h2>
+          </div>
+           <div class="form-group">
+                <input asp-for="FullName" name="FullName" class="fullname" placeholder=" " required />
+                <label for="FullName" class="form-label">Full Name <span class="required" style="color:red">*</span></label><br />
+            </div>
+            <div class="form-group">
+                <input asp-for="Email" name="Email" class="email" placeholder=" " required />
+                <label for="Email" class="form-label-email">Email <span class="required" style="color:red">*</span></label><br />
+            </div>
+            <div class="form-group">
+                <input asp-for="PhoneNo" name="PhoneNo" class="phoneno" placeholder=" " required />
+                <label for="PhoneNo" class="form-label-phone">Phone Number <span class="required" style="color:red">*</span></label><br />
+            </div>
+            <div class="form-group">
+                <input asp-for="UserName" name="UserName" class="reg-username" placeholder=" " required />
+                <label for="UserName" class="form-label-user">Username <span class="required" style="color:red">*</span></label><br />
+            </div>
+            <div class="form-group">
+                <input asp-for="Password" type="Password" name="Password" class="reg-password" placeholder=" " required />
+                <label for="Password" class="form-label-pwd">Password <span class="required" style="color:red">*</span></label><br />
+            </div>
+            <div class="form-group">
+                <input asp-for="ConfirmPassword" type="password" name="ConfirmPassword" class="confirmpassword" placeholder=" " required />
+                <label for="ConfirmPassword" class="form-label-cpwd">Confirm Password <span class="required" style="color:red">*</span></label><br />
+            </div>
+            <div class="form-group">
+                <input asp-for="DateOfBirth" type="date" name="DateOfBirth" class="dateofbirth" style="font-size: 16px;font-weight:normal" placeholder="" required />
+                <!--<label for="DateOfBirth" class="form-label-dob">Date Of Birth<span class="required" style="color:red">*</span></label><br />-->
+            </div>
+            <div class="address-wrapper">
+                <textarea asp-for="Address" name="Address" class="address" placeholder=" " required></textarea>
+                <label for="Address" class="form-label-adrs">Address<span class="required" style="color:red">*</span></label><br />
+            </div>
+            <button type="submit" class="register-btn">Submit</button>
+
+            <div style="color:red;">
+                @ViewBag.Error
+            </div>
+     </div>
+  </div>
+</form>

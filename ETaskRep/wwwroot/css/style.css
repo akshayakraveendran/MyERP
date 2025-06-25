@@ -1,0 +1,333 @@
+﻿.username, .password {
+    width: 350px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s ease;
+    position: relative;
+    left: 200px;
+    bottom: 60px;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fullname, .email, .phoneno, .confirmpassword,.reg-username,.reg-password, .dateofbirth{
+    width: 350px;
+    padding: 10px 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s ease;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.fullname, .email,.phoneno, .confirmpassword, .reg-username, .reg-password, .dateofbirth {
+    top: 70px;
+    left: 50px;
+}
+.address-wrapper {
+    
+    margin-left: 320px;
+    margin-top: 193px;
+}
+.form-label {
+    position: absolute;
+    top: 85px;
+    left: 65px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+.form-label-email {
+    position: absolute;
+    top: 135px;
+    left: 65px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+.form-label-phone {
+    position: absolute;
+    top: 185px;
+    left: 65px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+.form-label-user {
+    position: absolute;
+    top: 235px;
+    left: 65px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+.form-label-pwd {
+    position: absolute;
+    top: 285px;
+    left: 65px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+.form-label-cpwd {
+    position: absolute;
+    top: 335px;
+    left: 65px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+.form-label-date {
+    position: absolute;
+    top: 375px;
+    left: 65px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+.form-label-adrs {
+    position: absolute;
+    top: 435px;
+    left: 65px;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.fullname:focus + .form-label, 
+.fullname:not(:placeholder-shown) + .form-label {
+    top: 68px;
+    left: 50px;
+    font-size: 13px;
+    color: #333;
+}
+
+.email:focus + .form-label-email,
+.email:not(:placeholder-shown) + .form-label-email {
+    top: 120px;
+    left: 50px;
+    font-size: 13px;
+    color: #333;
+}
+.phoneno:focus + .form-label-phone,
+.phoneno:not(:placeholder-shown) + .form-label-phone {
+    top: 165px;
+    left: 50px;
+    font-size: 13px;
+    color: #333;
+}
+.reg-username:focus + .form-label-user,
+.reg-username:not(:placeholder-shown) + .form-label-user {
+    top: 215px;
+    left: 50px;
+    font-size: 13px;
+    color: #333;
+}
+.reg-password:focus + .form-label-pwd,
+.reg-password:not(:placeholder-shown) + .form-label-pwd {
+    top: 265px;
+    left: 50px;
+    font-size: 13px;
+    color: #333;
+}
+.confirmpassword:focus + .form-label-cpwd,
+.confirmpassword:not(:placeholder-shown) + .form-label-cpwd {
+    top: 315px;
+    left: 50px;
+    font-size: 13px;
+    color: #333;
+}
+.dateofbirth:focus + .form-label-dob,
+.dateofbirth:not(:placeholder-shown) + .form-label-dob {
+    top: 165px;
+    left: 50px;
+    font-size: 13px;
+    color: #333;
+}
+.address:focus + .form-label-adrs,
+.address:not(:placeholder-shown) + .form-label-adrs {
+    top: 417px;
+    left: 50px;
+    font-size: 13px;
+    color: #333;
+}
+.address {
+    width: 350px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s ease;
+    position: relative;
+    margin-left: 320px; 
+    margin-top: 193px;
+}
+
+.login-username {
+    width: 350px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s ease;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-password {
+    width: 350px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s ease;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.address {
+    width: 350px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s ease;
+    position: relative;
+    right: 270px;
+    bottom: 130px;
+    height:120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login-btn {
+    width: 100px;
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 320px;
+    top: 75px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.register-btn {
+    width: 100px;
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 170px;
+    bottom: 148px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#login-head {
+    position: relative;
+    left: 350px;
+    top: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.register-head {
+    position: absolute;
+    left:130px;
+    top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login-full{
+    position:relative;
+    background-color:rebeccapurple;
+    height:100%;
+    width:100%;
+    bottom:0px;
+}
+#login-border {
+    position: relative;
+    background-color: aliceblue;
+    height: 50%;
+    width: 50%;
+    left:400px;
+    top:150px;
+}
+.register-border {
+    position: relative;
+    background-color: aliceblue;
+    height: 90%;
+    width: 30%;
+    left: 500px;
+    top: 40px;
+}
+#reg-link {
+    position: relative;
+    left: 500px;
+    top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#register-border {
+    width: 350px;
+    padding: 10px 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s ease;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
